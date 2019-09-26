@@ -6,19 +6,28 @@
   "main": "src/index.js",
   "dependencies": {
     "@nmq/q": "^1.0.3",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
     "node-sass": "^4.12.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.0",
     "react-scripts": "3.0.0",
+    "react-styleguidist": "^9.1.16",
     "socket.io-client": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-plugin-jest": "^22.17.0"
+  },
   "scripts": {
     "start": "react-scripts start",
+    "lint": "eslint src/**/*.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "browserslist": {
     "production": [
